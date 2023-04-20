@@ -1,0 +1,3 @@
+/home/parallels/draco/build/CMakeFiles/draco.dir
+/home/parallels/draco/build/CMakeFiles/edit_cache.dir
+/home/parallels/draco/build/CMakeFiles/rebuild_cache.dir
