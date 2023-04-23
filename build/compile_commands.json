@@ -1,7 +1,22 @@
 [
 {
-  "directory": "/home/parallels/draco/build",
-  "command": "/usr/bin/c++ -DGFLAGS_IS_A_DLL=0 -isystem /home/parallels/vcpkg/installed/arm64-linux/include -std=gnu++17 -o CMakeFiles/draco.dir/src/main.cpp.o -c /home/parallels/draco/src/main.cpp",
+  "directory": "/home/parallels/draco/build/src",
+  "command": "/usr/bin/c++ -DGFLAGS_IS_A_DLL=0 -isystem /home/parallels/vcpkg/installed/arm64-linux/include -std=gnu++17 -o CMakeFiles/main.dir/main.cpp.o -c /home/parallels/draco/src/main.cpp",
   "file": "/home/parallels/draco/src/main.cpp"
+},
+{
+  "directory": "/home/parallels/draco/build/test/compiler",
+  "command": "/usr/bin/c++  -isystem /home/parallels/vcpkg/installed/arm64-linux/include -std=gnu++17 -o CMakeFiles/compiler_graphql_token_test.dir/compiler_test.cpp.o -c /home/parallels/draco/test/compiler/compiler_test.cpp",
+  "file": "/home/parallels/draco/test/compiler/compiler_test.cpp"
+},
+{
+  "directory": "/home/parallels/draco/build/test/compiler",
+  "command": "/usr/bin/c++  -isystem /home/parallels/vcpkg/installed/arm64-linux/include -std=gnu++17 -o CMakeFiles/compiler_graphql_token_test.dir/__/__/src/compiler/token.cpp.o -c /home/parallels/draco/src/compiler/token.cpp",
+  "file": "/home/parallels/draco/src/compiler/token.cpp"
+},
+{
+  "directory": "/home/parallels/draco/build/test/compiler",
+  "command": "/usr/bin/c++  -isystem /home/parallels/vcpkg/installed/arm64-linux/include -std=gnu++17 -o CMakeFiles/compiler_graphql_token_test.dir/__/__/src/compiler/source.cpp.o -c /home/parallels/draco/src/compiler/source.cpp",
+  "file": "/home/parallels/draco/src/compiler/source.cpp"
 }
 ]

@@ -10,18 +10,12 @@ cmake_minimum_required(VERSION 3.10)
 
 project(draco)
 
-
-
 find_package(gflags CONFIG REQUIRED)
 find_package(glog CONFIG REQUIRED)
+find_package(GTest CONFIG REQUIRED)
+
+add_subdirectory(src/)
 
 enable_testing()
-find_package(GTest CONFIG REQUIRED)
-add_test(AllTestsInMain main)
-
-
-add_executable(draco src/main.cpp)
-target_link_libraries(draco PRIVATE glog::glog)
-target_link_libraries(draco PRIVATE gflags::gflags)
-target_link_libraries(main PRIVATE GTest::gtest GTest::gtest_main GTest::gmock GTest::gmock_main)
-
+add_subdirectory(test/compiler)
+include(GoogleTest)

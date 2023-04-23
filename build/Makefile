@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /home/parallels/draco/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/local/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -117,41 +127,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named draco
+# Target rules for targets named main
 
 # Build rule for target.
-draco: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 draco
-.PHONY : draco
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-draco/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/draco.dir/build.make CMakeFiles/draco.dir/build
-.PHONY : draco/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
+.PHONY : main/fast
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+#=============================================================================
+# Target rules for targets named compiler_graphql_token_test
 
-# target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/draco.dir/build.make CMakeFiles/draco.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+# Build rule for target.
+compiler_graphql_token_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 compiler_graphql_token_test
+.PHONY : compiler_graphql_token_test
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/draco.dir/build.make CMakeFiles/draco.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/draco.dir/build.make CMakeFiles/draco.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+# fast build rule for target.
+compiler_graphql_token_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/compiler/CMakeFiles/compiler_graphql_token_test.dir/build.make test/compiler/CMakeFiles/compiler_graphql_token_test.dir/build
+.PHONY : compiler_graphql_token_test/fast
 
 # Help Target
 help:
@@ -161,10 +160,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... draco"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... test"
+	@echo "... compiler_graphql_token_test"
+	@echo "... main"
 .PHONY : help
 
 

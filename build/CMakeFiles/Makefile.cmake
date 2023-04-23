@@ -11,6 +11,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.0-rc1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.0-rc1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.0-rc1/CMakeSystem.cmake"
+  "../src/CMakeLists.txt"
+  "../test/compiler/CMakeLists.txt"
   "/home/parallels/vcpkg/installed/arm64-linux/share/gflags/gflags-config-version.cmake"
   "/home/parallels/vcpkg/installed/arm64-linux/share/gflags/gflags-config.cmake"
   "/home/parallels/vcpkg/installed/arm64-linux/share/gflags/gflags-targets-debug.cmake"
@@ -22,6 +24,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/parallels/vcpkg/installed/arm64-linux/share/glog/glog-targets-debug.cmake"
   "/home/parallels/vcpkg/installed/arm64-linux/share/glog/glog-targets-release.cmake"
   "/home/parallels/vcpkg/installed/arm64-linux/share/glog/glog-targets.cmake"
+  "/home/parallels/vcpkg/installed/arm64-linux/share/gtest/GTestConfig.cmake"
+  "/home/parallels/vcpkg/installed/arm64-linux/share/gtest/GTestConfigVersion.cmake"
+  "/home/parallels/vcpkg/installed/arm64-linux/share/gtest/GTestTargets-debug.cmake"
+  "/home/parallels/vcpkg/installed/arm64-linux/share/gtest/GTestTargets-release.cmake"
+  "/home/parallels/vcpkg/installed/arm64-linux/share/gtest/GTestTargets.cmake"
   "/home/parallels/vcpkg/scripts/buildsystems/vcpkg.cmake"
   "/usr/local/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "/usr/local/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
@@ -33,10 +40,18 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake"
   "/usr/local/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/local/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/usr/local/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake"
+  "/usr/local/share/cmake-3.22/Modules/CheckIncludeFile.cmake"
+  "/usr/local/share/cmake-3.22/Modules/CheckLibraryExists.cmake"
   "/usr/local/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/usr/local/share/cmake-3.22/Modules/Compiler/GNU-C.cmake"
   "/usr/local/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake"
   "/usr/local/share/cmake-3.22/Modules/Compiler/GNU.cmake"
+  "/usr/local/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake"
+  "/usr/local/share/cmake-3.22/Modules/FindPackageMessage.cmake"
+  "/usr/local/share/cmake-3.22/Modules/FindThreads.cmake"
+  "/usr/local/share/cmake-3.22/Modules/GoogleTest.cmake"
+  "/usr/local/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake"
   "/usr/local/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake"
   "/usr/local/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake"
   "/usr/local/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake"
@@ -53,9 +68,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test/compiler/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/draco.dir/DependInfo.cmake"
+  "src/CMakeFiles/main.dir/DependInfo.cmake"
+  "test/compiler/CMakeFiles/compiler_graphql_token_test.dir/DependInfo.cmake"
   )

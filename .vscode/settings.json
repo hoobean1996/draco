@@ -58,6 +58,16 @@
     "cinttypes": "cpp",
     "typeinfo": "cpp",
     "codecvt": "cpp",
-    "iomanip": "cpp"
+    "iomanip": "cpp",
+    "any": "cpp",
+    "condition_variable": "cpp",
+    "map": "cpp",
+    "set": "cpp",
+    "source_location": "cpp",
+    "mutex": "cpp",
+    "span": "cpp",
+    "stop_token": "cpp",
+    "thread": "cpp",
+    "variant": "cpp"
   }
 }
