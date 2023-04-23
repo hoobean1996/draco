@@ -127,17 +127,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named libapi
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+libapi: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libapi
+.PHONY : libapi
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
-.PHONY : main/fast
+libapi/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/libapi.dir/build.make src/CMakeFiles/libapi.dir/build
+.PHONY : libapi/fast
 
 #=============================================================================
 # Target rules for targets named compiler_graphql_token_test
@@ -162,7 +162,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... compiler_graphql_token_test"
-	@echo "... main"
+	@echo "... libapi"
 .PHONY : help
 
 

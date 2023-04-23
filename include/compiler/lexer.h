@@ -18,6 +18,14 @@ public:
   Token GetNextToken();
   Token PeekNextToken();
 
+  // AdvanceOne is used to move forward for 1 character
+  void AdvanceOne();
+
+  int GetCurrentPosition();
+  char GetCurrentChar();
+  int GetNextPosition();
+
+  // [Debug Only]
 private:
   Source source_;
   int currentPosition_; // current index

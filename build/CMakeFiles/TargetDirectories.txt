@@ -1,7 +1,7 @@
 /home/parallels/draco/build/CMakeFiles/test.dir
 /home/parallels/draco/build/CMakeFiles/edit_cache.dir
 /home/parallels/draco/build/CMakeFiles/rebuild_cache.dir
-/home/parallels/draco/build/src/CMakeFiles/main.dir
+/home/parallels/draco/build/src/CMakeFiles/libapi.dir
 /home/parallels/draco/build/src/CMakeFiles/test.dir
 /home/parallels/draco/build/src/CMakeFiles/edit_cache.dir
 /home/parallels/draco/build/src/CMakeFiles/rebuild_cache.dir

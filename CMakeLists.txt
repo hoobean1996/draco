@@ -13,6 +13,7 @@ project(draco)
 find_package(gflags CONFIG REQUIRED)
 find_package(glog CONFIG REQUIRED)
 find_package(GTest CONFIG REQUIRED)
+find_package(folly CONFIG REQUIRED)
 
 add_subdirectory(src/)
 

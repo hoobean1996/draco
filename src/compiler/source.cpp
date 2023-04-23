@@ -1,4 +1,5 @@
 #include "../../include/compiler/source.h"
+#include <folly/String.h>
 #include <sstream>
 
 namespace draco {
@@ -31,11 +32,9 @@ int Source::GetLineCount() const { return lines_.size(); }
 
 std::vector<std::string> Source::split(const char delim) {
   std::vector<std::string> ans;
-  std::istringstream ss(content_);
-  std::string token;
-  while (std::getline(ss, token, delim)) {
-
-    ans.push_back(token);
+  folly::split(delim, content_, ans);
+  for (auto &l : ans) {
+    l = folly::trimWhitespace(l);
   }
   return ans;
 }
